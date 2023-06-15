@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgb(235, 173, 115);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logo{
+    width: 20%;
+    /* padding: 10px; */
+}
+.nav-logo{
+    font-size: 50px;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    /* margin: auto; */
+}
+.nav-logo:hover{
+    color: rgb(150, 121, 13);
+    transition: 0.5s;
+}
+.search-bar{
+    width: 35%;
+}
+.search-bar input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    /* padding: 10px; */
+
+    display: flex;
+    justify-content: center;
+}
+.nav-items .fa{
+    /* font-size: 20px; */
+    display: none;
+}
+.nav-items{
+    width: 40%;
+    margin-top: 25px; 
+    text-align: right; 
+}
+.nav-items ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-items ul a {
+    display: inline-block;
+    padding: 15px;    
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+.nav-items ul a::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background: #ea9738;
+}
+.nav-items ul a:hover{
+    color: rgb(141, 125, 35);
+    transition: 0.5s;
+}
+
+
+
+@media (max-width: 700px){
+    
+    .nav-logo{
+        font-size: 25px;
+        margin-right: 50px;
+        width: 100px;
+    }
+    .nav-items ul a{
+        display: block;
+        font-size: 25px;
+    }
+    .nav-items{
+        position: fixed;
+        z-index: 1;
+        display: none;
+    }
+    /* .nav-items{
+        position: fixed;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+        right: -200px;
+        width: 100px;
+        background-color: rgb(150, 172, 194);
+        
+    } */
+    .nav-items .fa{
+        display: block;
+        color: #1d1b1b;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
